@@ -1,0 +1,118 @@
+body {
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cur-p {
+  cursor: pointer;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */
+}
+
+.abs-full {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.abs-cent-x {
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.abs-cent-xy {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.as-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.as-contain {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  overflow: hidden;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.img-full {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.list-custom {
+  list-style-type: none;
+  margin: 0;
+  li {
+    position: relative;
+    &:before {
+      content: "";
+    }
+  }
+}
+
+// .menui {
+// 	margin: 0;
+// 	list-style-type: none;
+// }
+.menu-x {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.menu-y {
+  margin: 0;
+  list-style-type: none;
+  li {
+    display: block;
+  }
+}
+
+.centered-column {
+  @include grid-column-position(center);
+}
+
+.flex {
+  display: flex;
+}
+
+.align-cm {
+  align-items: center;
+  justify-content: center;
+}
