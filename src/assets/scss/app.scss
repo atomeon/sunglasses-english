@@ -61,15 +61,15 @@ html {
 
 // @import "src/sass/lightgallery";
 // @import "parts/_lightgallery-local";
-// @import "slick/slick.scss";
-// @import "slick/slick-theme.scss";
+@import "slick/slick.scss";
+@import "slick/slick-theme.scss";
 // @import "parts/slick-local";
 
 @import "components/helpers"; // вспомогательные классы
 @import "parts/common"; // общие стили элементов, появляющихся на разных страницах
 
-// @import "parts/off-canvas";
-// @import "parts/header";
+@import "parts/off-canvas";
+@import "parts/header";
 // @import "parts/footer";
 @import "parts/styles";
 // @import "parts/about";

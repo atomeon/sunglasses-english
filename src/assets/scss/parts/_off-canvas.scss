@@ -1,0 +1,77 @@
+// BURGER MENU
+.main-nav-ctrl {
+	height: rem(40);
+	width: rem(40);
+	@include breakpoint(large) {
+	  width: rem(105);
+	}
+	position: absolute;
+	transform: rotate(0deg);
+	transition: 0.5s ease-in-out;
+	cursor: pointer;
+	z-index: 99;
+	top: 50%;
+	transform: translateY(-50%);
+	right: rem(3);
+	// background-color: $brand-dark-brown;
+	@include breakpoint(large) {
+	  background: transparent;
+	}
+  }
+
+#main-nav-ctrl span {
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: rem(20);
+	background: #000;
+	border-radius: 9px;
+	opacity: 1;
+	right: rem(10);
+	transform: rotate(0deg);
+	transition: 0.25s ease-in-out;
+  }
+  
+  #main-nav-ctrl span:nth-child(1) {
+	top: rem(13);
+  }
+  
+  #main-nav-ctrl span:nth-child(2),
+  #main-nav-ctrl span:nth-child(3) {
+	top: rem(20);
+  }
+  
+  #main-nav-ctrl span:nth-child(4) {
+	top: rem(27);
+  }
+  
+  #main-nav-ctrl[aria-expanded="true"] span:nth-child(1) {
+	top: rem(13);
+	width: 0%;
+  }
+  
+  #main-nav-ctrl[aria-expanded="true"] span:nth-child(2) {
+	transform: rotate(45deg);
+  }
+  
+  #main-nav-ctrl[aria-expanded="true"] span:nth-child(3) {
+	transform: rotate(-45deg);
+  }
+  
+  #main-nav-ctrl[aria-expanded="true"] span:nth-child(4) {
+	top: rem(27);
+	width: 0%;
+  }
+  
+  #main-nav-ctrl[aria-expanded="false"] ~ .header__close-handler {
+	display: none;
+  }
+  
+  #main-nav-ctrl[aria-expanded="true"] {
+	& ~ .header__open-handler {
+	  display: none;
+	}
+	& ~ .header__close-handler {
+	  display: block;
+	}
+  }

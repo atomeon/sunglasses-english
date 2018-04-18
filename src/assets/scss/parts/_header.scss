@@ -1,0 +1,21 @@
+header {
+	height: rem(50);
+	@include breakpoint(medium) {
+		height: rem(60);
+	}
+	background-color: #F4F4F4;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+
+	display: flex;
+	align-items: center;
+}
+
+.m-nav__controller {
+	position: relative;
+	width: rem(100);
+	@include breakpoint(medium) {
+		display: none;
+	}
+}
