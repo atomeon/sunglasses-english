@@ -42,7 +42,17 @@
 }
 
 
+@font-face {
+    font-family: 'lazer84';
+    src: url('../fonts/lazer84-webfont.woff2') format('woff2'),
+         url('../fonts/lazer84-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 
 $ff-main: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-// $ff-second: 'cormorantgaramond', 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$ff-second: 'lazer84', 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $default-font-size: 16;

@@ -39,6 +39,11 @@ body {
   left: 50%;
 }
 
+.abs-cent-y {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
 .abs-cent-xy {
   position: absolute;
   transform: translate(-50%, -50%);

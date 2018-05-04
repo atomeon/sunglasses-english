@@ -1,21 +1,51 @@
 header {
-	height: rem(50);
+	position: relative;
+	&:after {
+		@extend .abs-full;
+		content: '';
+		// background-color: rgba(#fff, .2);
+		background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
+		z-index: 1;
+	}
+	background-image: url(../img/nightsky-header.jpg);
+	background-position: 0 0;
+	@extend .img-cover;
+	color: #fff;
+
+	height: rem(70);
 	@include breakpoint(medium) {
-		height: rem(60);
+		height: rem(100);
 	}
 	background-color: #F4F4F4;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
 
-	display: flex;
-	align-items: center;
+	
+	.cell {
+		display: flex;
+		align-items: center;
+	}
+
+	.grid-container {
+		position: relative;
+		z-index: 2;
+	}
 }
 
 .m-nav__controller {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
 	position: relative;
 	width: rem(100);
-	@include breakpoint(medium) {
-		display: none;
-	}
+	// @include breakpoint(medium) {
+	// 	display: none;
+	// }
+}
+
+
+.header__glasses {
+	width: rem(70);
 }

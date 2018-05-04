@@ -1,7 +1,7 @@
 // BURGER MENU
 .main-nav-ctrl {
 	height: rem(40);
-	width: rem(40);
+	width: rem(95);
 	@include breakpoint(large) {
 	  width: rem(105);
 	}
@@ -24,7 +24,7 @@
 	position: absolute;
 	height: 1px;
 	width: rem(20);
-	background: #000;
+	background: #fff;
 	border-radius: 9px;
 	opacity: 1;
 	right: rem(10);
@@ -74,4 +74,9 @@
 	& ~ .header__close-handler {
 	  display: block;
 	}
-  }
+	}
+	
+
+.header__open-handler, .header__close-handler {
+	margin-right: rem(50);
+}

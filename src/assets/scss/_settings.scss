@@ -75,6 +75,8 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
+
+$theme-pink: #f3a5ef;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
@@ -112,7 +114,7 @@ $breakpoints: (
   xxlarge: 1440px,
 );
 $print-breakpoint: large;
-$breakpoint-classes: (small medium large);
+$breakpoint-classes: (small medium large xlarge xxlarge);
 
 // 3. The Grid
 // -----------

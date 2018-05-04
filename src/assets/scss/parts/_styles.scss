@@ -7,15 +7,50 @@ footer {
 	color: #fff;
 	font-weight: bold;
 }
+
+.ff-s {
+	font-family: $ff-second;
+}
+
+.--pink {
+	color: $theme-pink;
+}
 .hero {
-	height: 80vh;
+	height: 100vh;
 	position: relative;
+	@extend .img-cover;
 
 	.grid-container {
 		z-index: 2;
 		position: relative;
 	}
+}
 
+.header__title {
+	font-size: rem(30);
+}
+
+.sunglasses-logo {
+	// animation: 2s infinite beatHeart;
+	
+}
+
+@keyframes beatHeart {
+	0% {
+	  transform:  translate(-50%, -50%) scale(1);
+	}
+	25% {
+	  transform:  translate(-50%, -50%) scale(1.1);
+	}
+	40% {
+	  transform:  translate(-50%, -50%) scale(1);
+	}
+	60% {
+	  transform:  translate(-50%, -50%) scale(1.1);
+	}
+	100% {
+	  transform:  translate(-50%, -50%) scale(1);
+	}
 }
 
 .hero__slider {
@@ -58,6 +93,15 @@ footer {
 		font-size: 5rem;
 	}
 }
+
+.hero-img {
+	@extend .abs-cent-xy;
+	@include breakpoint(xxlarge) {
+		width: 50vw;
+		max-width: 40rem;
+	}
+}
+
 
 .about {
 	position: relative;
