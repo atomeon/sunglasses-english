@@ -16,7 +16,7 @@ footer {
 	color: $theme-pink;
 }
 .hero {
-	height: 100vh;
+	height: 90vh;
 	position: relative;
 	@extend .img-cover;
 
@@ -28,6 +28,10 @@ footer {
 
 .header__title {
 	font-size: rem(30);
+}
+
+.emoji {
+	font-size: 170%;
 }
 
 .sunglasses-logo {
@@ -120,3 +124,29 @@ footer {
 	margin-top: rem(-30);
 }
 
+.head-title {
+	h1 {
+		display: inline;
+	}
+
+	span {
+		// font-family: $ff-second;
+		font-size: rem(20);
+		@include breakpoint(medium) {
+			font-size: rem(36);
+		}
+		&:after {
+			content: ',';
+			display: inline;
+			color: #000;
+			font-family: $ff-main;
+		}
+	}
+}
+
+.greeting {
+	padding-top: rem(20);
+	@include breakpoint(medium) {
+		padding-top: rem(50);
+	}
+}
