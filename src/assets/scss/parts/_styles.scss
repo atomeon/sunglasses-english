@@ -22,9 +22,6 @@
 	}
 }
 
-.header__title {
-	font-size: rem(30);
-}
 
 .emoji {
 	font-size: 170%;
@@ -172,13 +169,13 @@ h1 {
 	// background-size: cover;
 
 	&.--one {
-		background-position: left center;
+		background-position: left 55%;
 	}
 	&.--two {
-		background-position: center center;
+		background-position: center 55%;
 	}
 	&.--three {
-		background-position: right center;
+		background-position: right 55%;
 	}
 }
 

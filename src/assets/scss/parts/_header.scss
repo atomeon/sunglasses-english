@@ -33,6 +33,14 @@ header {
 	}
 }
 
+
+.header__title {
+	font-size: rem(30);
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+	color: #b73bb6;
+	margin-right: rem(30);
+}
+
 .m-nav__controller {
 	display: flex;
 	align-items: center;
@@ -48,4 +56,19 @@ header {
 
 .header__glasses {
 	width: rem(70);
+}
+
+.header-nav {
+	text-shadow: 0 0 5px #835858, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+	font-size: rem(25);
+	a {
+		color: #fff;
+		font-weight: 700;
+	}
+
+	li {
+		&:not(:last-child) {
+			margin-right: rem(30);
+		}
+	}
 }
