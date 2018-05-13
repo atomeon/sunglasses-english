@@ -29,7 +29,7 @@
     font-family: 'Open Sans';
     src: url('../fonts/subset-OpenSans-Bold.woff2') format('woff2'),
         url('../fonts/subset-OpenSans-Bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -44,8 +44,8 @@
 
 @font-face {
     font-family: 'lazer84';
-    src: url('../fonts/lazer84-webfont.woff2') format('woff2'),
-         url('../fonts/lazer84-webfont.woff') format('woff');
+    src: url('../fonts/subset-lazer84.woff2') format('woff2'),
+         url('../fonts/subset-lazer84.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
