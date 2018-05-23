@@ -220,6 +220,11 @@ h1 {
 }
 
 .about-person {
+	@include breakpoint(small only) {
+		img {
+			height: 100vw;
+		}
+	}
 	margin-bottom: rem(20);
 	@include breakpoint(medium) {
 		margin-bottom: 0;
