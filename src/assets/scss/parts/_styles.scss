@@ -302,7 +302,11 @@ h1 {
 		font-weight: 600;
 		font-size: rem(20);
 		strong {
-			font-size: rem(28);
+			font-size: rem(24);
+			@include breakpoint(medium) {
+				font-size: rem(28);
+				
+			}
 		}
 		margin-bottom: rem(15);
 	}
@@ -331,11 +335,18 @@ h1 {
 	}
 	@include breakpoint(large) {
 		justify-content: center;
+		&:hover {
+			svg {
+				fill: #79176d;
+				transform: translateY(-5px) scale(1.5);
+				
+			}
+		}
 		
 	}
 	display: flex;
 	height: 100%;
-	margin-bottom: rem(16);
+	margin-bottom: rem(20);
 
 	div {
 		display: flex;
@@ -349,14 +360,6 @@ h1 {
 		fill: $black;
 		position: relative;
 		transition: all .3s;
-	}
-
-	&:hover {
-		svg {
-			fill: #79176d;
-			transform: translateY(-5px) scale(1.5);
-			
-		}
 	}
 }
 

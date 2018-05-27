@@ -80,3 +80,32 @@
 .header__open-handler, .header__close-handler {
 	margin-right: rem(50);
 }
+
+.off-canvas {
+	background-image: url(../img/nightsky-header.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: rem(120) rem(10) rem(20);
+}
+
+.mobile-menu {
+	text-shadow: 0 0 5px rgb(131, 88, 88), 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+	font-size: rem(25);
+
+	li {
+		margin-bottom: rem(20);
+		text-align: center;
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+}
+
+.mobile-menu__phone {
+	a, a:hover, a:visited, a:focus {
+		color: #fff;
+	}
+
+	text-align: center;
+}
