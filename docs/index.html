@@ -24,6 +24,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favs.ico/favicon-16x16.png">
   <link rel="manifest" href="assets/img/favs.ico/manifest.json">
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/app.css">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -33,7 +35,27 @@
 
 <body>
 
-
+  <div class="visuallyhidden">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width: 0; height: 0; position: absolute; overflow: hidden;">
+    
+    	
+    	<symbol id="svg-email" viewBox="0 0 44 44">
+    		<path d="M43 6H1a1 1 0 0 0-1 1v30a1 1 0 0 0 1 1h42a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zm-1 27.581L29.612 21.194l-1.414 1.414L41.59 36H2.41l13.392-13.392-1.414-1.414L2 33.581V8h40v25.581z"/><path d="M39.979 8L22 25.979 4.021 8H2v.807L21.293 28.1a.999.999 0 0 0 1.414 0L42 8.807V8h-2.021z"/>
+    	</symbol>
+    
+    	<symbol id="svg-location" viewBox="0 0 512 512">
+    			<path d="M256 0C156.748 0 76 80.748 76 180c0 33.534 9.289 66.26 26.869 94.652l142.885 230.257A15 15 0 0 0 258.499 512h.119a14.997 14.997 0 0 0 12.75-7.292L410.611 272.22C427.221 244.428 436 212.539 436 180 436 80.748 355.252 0 256 0zm128.866 256.818L258.272 468.186l-129.905-209.34C113.734 235.214 105.8 207.95 105.8 180c0-82.71 67.49-150.2 150.2-150.2S406.1 97.29 406.1 180c0 27.121-7.411 53.688-21.234 76.818z"/><path d="M256 90c-49.626 0-90 40.374-90 90 0 49.309 39.717 90 90 90 50.903 0 90-41.233 90-90 0-49.626-40.374-90-90-90zm0 150.2c-33.257 0-60.2-27.033-60.2-60.2 0-33.084 27.116-60.2 60.2-60.2s60.1 27.116 60.1 60.2c0 32.683-26.316 60.2-60.1 60.2z"/>
+    	</symbol>
+    	<symbol id="svg-phone" viewBox="0 0 35 35">
+    			<path d="M25.302 0H9.698a2.37 2.37 0 0 0-2.364 2.364v30.271A2.371 2.371 0 0 0 9.698 35h15.604a2.37 2.37 0 0 0 2.364-2.364V2.364A2.37 2.37 0 0 0 25.302 0zM15.004 1.704h4.992a.286.286 0 0 1 0 .573h-4.992a.286.286 0 1 1 0-.573zM17.5 33.818a1.182 1.182 0 1 1 0-2.364 1.182 1.182 0 0 1 0 2.364zm8.521-3.193H8.979V3.749h17.042v26.876z"/>
+    	</symbol>
+    	<!-- <symbol id="" viewBox="0 0"></symbol> -->
+    </svg>
+    
+    <!--<svg width="34" height="34">
+    <use xlink:href="#ico-fb" />
+    </svg>-->
+  </div>
   <div class="wrapper off-canvas-wrapper">
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
     	<nav>
@@ -49,10 +71,10 @@
       <header>
 	<div class="grid-container full-height">
 		<div class="grid-x grid-margin-x full-height">
-			<div class="cell small-6 medium-4 large-1">
+			<div class="cell small-6 medium-2 large-1">
 				<img class="header__glasses" src="assets/img/sunglasses-cut.png" alt="">
 			</div>
-			<div class="cell large-11 show-for-large">
+			<div class="cell large-11 medium-10 show-for-medium">
 				<div class="ff-s header__title">
 					Sunglasses English
 				</div>
@@ -67,10 +89,14 @@
 						<li>
 							<a href="#contacts">Контакты</a>
 						</li>
+
 					</ul>
+					<div class="header-phone show-for-large">
+						<a href="tel:+77003030692">+7 (700) 3030692</a>
+					</div>
 				</nav>
 			</div>
-			<div class="cell small-6 align-right hide-for-large">
+			<div class="cell small-6 align-right hide-for-medium">
 				<div class="m-nav__controller">
 					<span id="main-nav-ctrl" class="main-nav-ctrl" data-toggle="offCanvas">
 						<span></span>
@@ -100,10 +126,11 @@
 </section>
 <section class="greeting section">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x">
-      <div class="cell">
-        <h1>Sunglasses English, учите английский в Алматы</h1>
-        <p class="lead">Хотите выучить английский? Преодолеть языковой барьер? Подготовиться к экзаменам ? Подтянуть грамматику легко и недорого? А главное качественно и у отличного преподавателя ?</p>
+    <div class="grid-x grid-margin-x align-center">
+      <div class="cell large-10">
+        <h1 class="text-center">Sunglasses English, учите
+          <br/> английский в Алматы</h1>
+        <p class="lead">Хотите выучить английский? Преодолеть языковой барьер? Подготовиться к экзаменам? Подтянуть грамматику легко и недорого? А главное качественно и у отличного преподавателя?</p>
         <!-- <p>Я открываю набор в группы по супер цене!</p> -->
       </div>
     </div>
@@ -165,7 +192,7 @@
           <strong>КазНУ им.&nbsp;Аль-Фараби</strong>.
         </p>
         <p>&mdash;&nbsp;Стаж преподавания
-          <strong>более 6&nbsp;лет</strong>.
+          <strong>более 7&nbsp;лет</strong>.
         </p>
         <p>&mdash;&nbsp;Преподаю
           <strong>все уровни английского языка</strong>: детям от&nbsp;4-х лет и&nbsp;до&nbsp;пенсионного возраста.
@@ -187,9 +214,9 @@
 <section class="section" id="prices">
   <div class="grid-container">
     <h2 class="text-center">Групповые занятия (до 8 человек в группе)*</h2>
-    <div class="grid-x grid-margin-x large-up-2 large-up-3 align-center">
+    <div class="grid-x grid-margin-x medium-up-2 large-up-3 align-center">
       <div class="cell">
-        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/heman.jpg); background-position: center, 60%">
+        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/heman.jpg); background-position: center, 60%">
           <h3 class="text-center">Тариф
             <strong>Детский</strong>
           </h3>
@@ -205,7 +232,7 @@
         </div>
       </div>
       <div class="cell">
-        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/ghost.jpg); background-position: center, 60%">
+        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/ghost.jpg); background-position: center, 60%">
           <h3 class="text-center">Тариф
             <strong>Cтуденческий</strong>
           </h3>
@@ -221,7 +248,7 @@
         </div>
       </div>
       <div class="cell">
-        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/david.jpg); background-position: center, 60%">
+        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/david.jpg); background-position: center, 60%">
           <h3 class="text-center">Тариф
             <strong>Взрослый</strong>
           </h3>
@@ -237,7 +264,7 @@
         </div>
       </div>
       <div class="cell">
-        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/swars.jpg); background-position: center, 60%">
+        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/swars.jpg); background-position: center, 60%">
           <h3 class="text-center">
             Репетиторство
             <strong>(индивидуальные занятия)</strong>
@@ -248,7 +275,7 @@
         </div>
       </div>
       <div class="cell">
-        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/tanos.jpg); background-position: center, 60%">
+        <div class="price-card" style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%), url(assets/img/tanos.jpg); background-position: center, 60%">
           <h3 class="text-center">Тариф
             <strong>Малыш</strong>
           </h3>
@@ -265,23 +292,51 @@
 </section>
 <section class="section contacts" id="contacts">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x">
+    <h2 class="text-center">Контакты</h2>
+    <div class="grid-x grid-margin-x large-up-3">
       <div class="cell">
-        <h2 class="text-center">Контакты</h2>
-        <p>Адрес:
-          <strong>Бальзака 8 - блок 4, в здании танцевальной студии "Аруна"</strong>.</p>
-        <p>Телефон:
-          <strong>
-            <a href="tel:+77003030692">+7(700)3030692</a>
-          </strong>
-        </p>
-        <p>Email:
-          <strong>ashlyayeva.m@gmail.com</strong>
-        </p>
-        <p>Приводите своих детей и приходите сами!
-          <br/>На моих занятиях весело и интересно!</p>
-        <p></p>
+        <div class="contacts-block">
+          <div>
+            <svg width="30" height="30">
+              <use xlink:href="#svg-location" />
+            </svg>
+          </div>
+          <div>
+            <!-- Адрес: -->
+            <strong>Бальзака 8 - блок 4, в здании танцевальной студии "Аруна"</strong>.
+          </div>
+        </div>
       </div>
+      <div class="cell">
+        <div class="contacts-block">
+          <div>
+            <svg width="30" height="30">
+              <use xlink:href="#svg-phone" />
+            </svg>
+          </div>
+          <div>
+            <strong>
+              <a href="tel:+77003030692">+7 (700) 3030692</a>
+            </strong>
+          </div>
+        </div>
+      </div>
+      <div class="cell">
+        <div class="contacts-block">
+          <div>
+            <svg width="30" height="30">
+              <use xlink:href="#svg-email" />
+            </svg>
+          </div>
+          <div>
+            <strong>ashlyayeva.m@gmail.com</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="advice text-center">
+      <p>Приводите своих детей и&nbsp;приходите сами!
+        <br/>На&nbsp;моих занятиях весело и&nbsp;интересно!</p>
     </div>
   </div>
   <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/70000001029233335/center/76.93406939506532,43.225387998444546/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a>

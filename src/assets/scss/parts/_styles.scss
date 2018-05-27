@@ -2,7 +2,22 @@
 // 	// background-color: #F4F4F4;
 // }
 
+a {
+	color: $black;
+	&:hover, &:visited {
+		color: inherit;
+	}
+}
 
+.lead {
+	margin-top: rem(-10);
+	margin-bottom: rem(30);
+	font-size: 110%;
+	font-weight: 600;
+	@include breakpoint(medium) {
+		font-size: 125%;
+	}
+}
 
 .ff-s {
 	font-family: $ff-second;
@@ -12,13 +27,19 @@
 	color: $theme-pink;
 }
 .hero {
-	height: 94vh;
+	height: 90vh;
 	position: relative;
 	@extend .img-cover;
 
 	.grid-container {
 		z-index: 2;
 		position: relative;
+	}
+}
+
+a {
+	&:visited {
+		color: inherit;
 	}
 }
 
@@ -108,7 +129,12 @@ h1 {
 
 .about {
 	position: relative;
-
+	@include breakpoint(medium) {
+		// font-size: rem(18);
+	}
+	@include breakpoint(large) {
+		font-size: rem(22);
+	}
 	.decor {
 		@extend .img-cover;
 		position: absolute;
@@ -216,7 +242,11 @@ h1 {
 
 .section {
 	padding-top: rem(10);
-	padding-bottom: rem(50);
+	padding-bottom: rem(30);
+	@include breakpoint(medium) {
+		padding-bottom: rem(50);
+		
+	}
 }
 
 .about-person {
@@ -232,14 +262,24 @@ h1 {
 }
 
 .price-card__units {
-	font-size: rem(25);
+	font-size: rem(20);
+	span {
+		display: inline-block;
+	}
+	@include breakpoint(medium) {
+		font-size: rem(25);
+	}
 	font-weight: 700;
 	margin-bottom: rem(15);
 }
 
 .price-card__freq {
-	font-weight: 400;
-	font-size: rem(18);
+	font-weight: 600;
+	font-size: rem(16);
+	@include breakpoint(medium) {
+		font-size: rem(18);
+		
+	}
 	color: #4b4545
 }
 
@@ -257,7 +297,9 @@ h1 {
 	background-color: #eee;
 	padding: rem(20);
 	margin-bottom: rem(30);
+
 	h3 {
+		font-weight: 600;
 		font-size: rem(20);
 		strong {
 			font-size: rem(28);
@@ -277,8 +319,45 @@ h1 {
 	padding-bottom: 0;
 	iframe {
 		width: 100%;
+		border: none!important;
 	}
 	margin-bottom: rem(-8)
+}
+
+.contacts-block {
+	
+	strong {
+		font-weight: 600;
+	}
+	@include breakpoint(large) {
+		justify-content: center;
+		
+	}
+	display: flex;
+	height: 100%;
+	margin-bottom: rem(16);
+
+	div {
+		display: flex;
+		align-items: center;
+		&:first-child {
+			margin-right: rem(15);
+		}
+	}
+
+	svg {
+		fill: $black;
+		position: relative;
+		transition: all .3s;
+	}
+
+	&:hover {
+		svg {
+			fill: #79176d;
+			transform: translateY(-5px) scale(1.5);
+			
+		}
+	}
 }
 
 footer {
@@ -290,6 +369,17 @@ footer {
 	background-image: url(../img/mountains-bg-1.png);
 	background-repeat: repeat;
 	background-position: center center;
-	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+	text-shadow: 0 0 3px #835858, 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 25px #ff00de, 0 0 20px #ff00de, 0 0 30px #ff00de, 0 0 25px #ff00de;
 	font-size: rem(25);
+}
+
+.advice {
+	font-size: rem(20);
+	@include breakpoint(medium) {
+		font-size: rem(25);
+	}
+	font-weight: 600;
+	margin-top: rem(40);
+	margin-bottom: rem(40);
+	letter-spacing: rem(-1);
 }

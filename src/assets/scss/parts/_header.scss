@@ -13,8 +13,8 @@ header {
 	color: #fff;
 
 	height: rem(70);
-	@include breakpoint(medium) {
-		height: rem(100);
+	@include breakpoint(large) {
+		height: rem(70);
 	}
 	background-color: #F4F4F4;
 	position: fixed;
@@ -35,7 +35,11 @@ header {
 
 
 .header__title {
-	font-size: rem(30);
+	font-size: rem(20);
+	@include breakpoint(large) {
+		min-width: rem(320);
+		font-size: rem(30);
+	}
 	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
 	color: #b73bb6;
 	margin-right: rem(30);
@@ -58,12 +62,21 @@ header {
 	width: rem(70);
 }
 
+.header-phone {
+	margin-left: auto;
+}
+
 .header-nav {
 	text-shadow: 0 0 5px #835858, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
-	font-size: rem(25);
+	font-size: rem(18);
+	@include breakpoint(large) {
+		width: 100%;
+		display: flex;
+		font-size: rem(20);
+	}
 	a {
 		color: #fff;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	li {

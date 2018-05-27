@@ -24,7 +24,7 @@
 //     src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), /* Serve Woff2 to browsers who accept it fall back to woff below */
 //          url('../fonts/opensans-light-webfont.woff') format('woff'), /* Safari, Android, iOS */
 // }
-
+/*
 @font-face {
     font-family: 'Open Sans';
     src: url('../fonts/subset-OpenSans-Bold.woff2') format('woff2'),
@@ -41,7 +41,7 @@
     font-style: normal;
 }
 
-
+*/
 @font-face {
     font-family: 'lazer84';
     src: url('../fonts/subset-lazer84.woff2') format('woff2'),
@@ -53,6 +53,7 @@
 
 
 
-$ff-main: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+// $ff-main: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$ff-main: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $ff-second: 'lazer84', 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $default-font-size: 16;
