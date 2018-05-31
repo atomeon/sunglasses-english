@@ -28,7 +28,7 @@ This template can be installed with the Foundation CLI, or downloaded and set up
 
 ### Using the CLI
 
-Install the Foundation CLI with this command:
+Install the Foundation CLI with this   command:
 
 ```bash
 npm install foundation-cli --global
