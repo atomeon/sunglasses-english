@@ -44,6 +44,35 @@
   <meta name="theme-color " content="#ffffff ">
 
   <style>
+    .preloader {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999;
+      opacity: 1;
+      background-color: #fff;
+      animation: preloader 2s ease 1;
+      animation-delay: .5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes preloader {
+      0% {
+        background-color: #fff;
+      }
+      50% {
+        background-color: #000;
+      }
+      99% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+      }
+    }
+
     h1,
     .h1,
     h2,
@@ -348,7 +377,7 @@
   <div class="visuallyhidden ">
     {{> svg-items}}
   </div>
-  {{> header}}
+  {{> preloader}} {{> header}}
   <div class="wrapper off-canvas-wrapper ">
     {{> off-canvas}}
     <div class="off-canvas-content " data-off-canvas-content>
