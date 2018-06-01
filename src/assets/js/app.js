@@ -3,15 +3,17 @@ import whatInput from 'what-input';
 
 window.$ = $;
 
-import Foundation from 'foundation-sites';
+// import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-//import './lib/foundation-explicit-pieces';
+import './lib/foundation-explicit-pieces';
 
 import "./modules/sliders";
-
-
+import * as lazySizes from 'lazysizes';
+import * as from from 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js';
+lazySizes.init();
 $(document).foundation();
+
 
 $('.header-nav .menu-x a, .mobile-menu ul a, .header__title a, .hero-logo').click(function (e) {
 	e.preventDefault();
