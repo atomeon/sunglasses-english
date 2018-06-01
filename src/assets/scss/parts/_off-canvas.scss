@@ -82,6 +82,7 @@
 }
 
 .off-canvas {
+	will-change: transform;
 	background-image: url(../img/nightsky-header.jpg);
 	background-size: cover;
 	background-position: center;
