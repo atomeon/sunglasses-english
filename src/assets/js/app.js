@@ -17,7 +17,6 @@ $(document).foundation();
 
 window.onload = function () {
 	document.querySelector('.preloader').remove();
-	console.log('Learn english with us, call now!');
 	$('.header-nav .menu-x a, .mobile-menu ul a, .header__title a, .hero-logo').click(function (e) {
 		e.preventDefault();
 		let target = $(this).attr('href');
