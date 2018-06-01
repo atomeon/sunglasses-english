@@ -14,18 +14,22 @@ import * as from from 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js';
 lazySizes.init();
 $(document).foundation();
 
+window.onload = function () {
 
-$('.header-nav .menu-x a, .mobile-menu ul a, .header__title a, .hero-logo').click(function (e) {
-	e.preventDefault();
-	let target = $(this).attr('href');
-	if ($('.section-intro__navigation').innerWidth() < 768) {
-		$('html, body').animate({
-			scrollTop: $(target).offset().top - 61
-		}, 800);
-	} else {
-		$('html, body').animate({
-			scrollTop: $(target).offset().top - 80
-		}, 800);
-		$('#offCanvas').foundation('close');
-	}
-});
+	document.querySelector('.preloader').remove();
+	$('.header-nav .menu-x a, .mobile-menu ul a, .header__title a, .hero-logo').click(function (e) {
+		e.preventDefault();
+		let target = $(this).attr('href');
+		if ($('.section-intro__navigation').innerWidth() < 768) {
+			$('html, body').animate({
+				scrollTop: $(target).offset().top - 61
+			}, 800);
+		} else {
+			$('html, body').animate({
+				scrollTop: $(target).offset().top - 80
+			}, 800);
+			$('#offCanvas').foundation('close');
+		}
+	});
+}
+
