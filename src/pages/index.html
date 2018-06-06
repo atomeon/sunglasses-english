@@ -9,15 +9,18 @@
     <div class="stars"></div>
     <div class="stars"></div>
   </div>
-  <img src="assets/img/logo-3.png" class="hero-img" alt="hero logo">
+  <img itemprop="image" src="assets/img/logo-3.png" class="hero-img" alt="hero logo">
 </section>
 <section class="greeting section" id="greeting">
   <div class="grid-container">
     <div class="grid-x grid-margin-x align-center">
       <div class="cell large-10">
-        <h1 class="text-center">Sunglasses English, учите
-          <br/> английский в Алматы</h1>
-        <p class="lead">Хотите выучить английский? Преодолеть языковой барьер? Подготовиться к экзаменам? Подтянуть грамматику легко и недорого? А главное качественно и у отличного преподавателя?</p>
+        <h1 class="text-center">
+          <span itemprop="name">Sunglasses English</span>,
+          <span itemprop="disambiguatingDescription"> учите
+            <br/> английский в Алматы</span>
+        </h1>
+        <p class="lead" itemprop="description">Хотите выучить английский? Преодолеть языковой барьер? Подготовиться к экзаменам? Подтянуть грамматику легко и недорого? А главное качественно и у отличного преподавателя?</p>
         <!-- <p>Я открываю набор в грdуппы по супер ц ене!</p> -->
       </div>
     </div>
@@ -28,7 +31,7 @@
             <div class="preparing-img">
               <img data-src="assets/img/nis.png" class="lazyload" alt="preparing to NIS">
             </div>
-            <div class="preparing-info">Подготовка к НИШ</div>
+            <div class="preparing-info" itemprop="disambiguatingDescription">Подготовка к НИШ</div>
           </div>
         </div>
       </div>
@@ -38,7 +41,7 @@
             <div class="preparing-img">
               <img data-src="assets/img/ielts.png" class="lazyload" alt="preparing to IELTS">
             </div>
-            <div class="preparing-info">Подготовка к IELTS</div>
+            <div class="preparing-info" itemprop="disambiguatingDescription">Подготовка к IELTS</div>
           </div>
         </div>
       </div>
@@ -48,7 +51,7 @@
             <div class="preparing-img">
               <img data-src="assets/img/toefl.png" class="lazyload" alt="preparing to TOEFL">
             </div>
-            <div class="preparing-info">Подготовка к TOEFL</div>
+            <div class="preparing-info" itemprop="disambiguatingDescription">Подготовка к TOEFL</div>
           </div>
         </div>
       </div>
@@ -58,36 +61,38 @@
 
 <section class="about section" id="about">
   <div class="grid-container">
-    <div class="grid-x grid-margin-x">
+    <div class="grid-x grid-margin-x" itemprop="founder" itemscope itemtype="http://schema.org/Person">
       <div class="cell medium-5 large-4">
         <div class="about-person text-center">
-          <img data-src="assets/img/ashley-compr.png" class="lazyload" alt="professor">
+          <img data-src="assets/img/miss-marge.png" class="lazyload" alt="professor">
         </div>
       </div>
       <div class="cell medium-7 large-8">
         <h2>Давайте познакомимся</h2>
         <p>Я &mdash;&nbsp;
-          <strong>Ашляева Маржан.</strong>
+          <strong itemprop="name">
+            <span itemprop="familyName">Ашляева</span>
+            <span itemprop="givenName">Маржан</span>.</strong>
         </p>
-        <p>&mdash;&nbsp;Окончила школу в&nbsp;
+        <p itemprop="description">&mdash;&nbsp;Окончила школу в&nbsp;
           <strong>США, El&nbsp;Diamante High School</strong>, Калифорния (по&nbsp;программе обмена для старшеклассников).
         </p>
-        <p>&mdash;&nbsp;Магистратура:
+        <p itemprop="description">&mdash;&nbsp;Магистратура:
           <strong>Амстердамский университет прикладных наук</strong>, Амстердам, Нидерланды.
         </p>
-        <p>&mdash;&nbsp;На&nbsp;данный момент являюсь преподавателем английского языка в&nbsp;
+        <p itemprop="description">&mdash;&nbsp;На&nbsp;данный момент являюсь преподавателем английского языка в&nbsp;
           <strong>КазНУ им.&nbsp;Аль-Фараби</strong>.
         </p>
-        <p>&mdash;&nbsp;Стаж преподавания
+        <p itemprop="description">&mdash;&nbsp;Стаж преподавания
           <strong>более 7&nbsp;лет</strong>.
         </p>
-        <p>&mdash;&nbsp;Преподаю
+        <p itemprop="description">&mdash;&nbsp;Преподаю
           <strong>все уровни английского языка</strong>: детям от&nbsp;4-х лет и&nbsp;до&nbsp;пенсионного возраста.
         </p>
-        <p>&mdash;&nbsp;Работаю как в&nbsp;группе, так и&nbsp;
+        <p itemprop="description">&mdash;&nbsp;Работаю как в&nbsp;группе, так и&nbsp;
           <strong>индивидуально</strong>.
         </p>
-        <p>&mdash;&nbsp;
+        <p itemprop="description">&mdash;&nbsp;
           <strong>Подготовка</strong> к экзаменам:
           <strong>НИШ</strong>,
           <strong>IELTS</strong> ,
@@ -190,7 +195,7 @@
           </div>
           <div>
             <!-- Адрес: -->
-            <strong>Бальзака 8&nbsp;&mdash; блок&nbsp;4, в&nbsp;здании танцевальной студии &laquo;Аруна&raquo;.</strong>
+            <strong itemprop="address">Бальзака 8&nbsp;&mdash; блок&nbsp;4, в&nbsp;здании танцевальной студии &laquo;Аруна&raquo;.</strong>
           </div>
         </div>
       </div>
@@ -202,7 +207,7 @@
             </svg>
           </div>
           <div>
-            <strong>
+            <strong itemprop="telephone">
               <a href="tel:+77003030692">+7 (700) 3030692</a>
             </strong>
           </div>
@@ -216,7 +221,7 @@
             </svg>
           </div>
           <div>
-            <strong>
+            <strong itemprop="email">
               <a href="mailto:ashlyayeva.m@gmail.com">ashlyayeva.m@gmail.com</a>
             </strong>
           </div>
