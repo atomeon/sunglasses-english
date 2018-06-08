@@ -378,7 +378,7 @@
 
 </head>
 
-<body data-off-canvas-content itemscope itemtype="http://schema.org/EducationalOrganization">
+<bodyitemscope itemtype="http://schema.org/EducationalOrganization">
 
   <div class="visuallyhidden ">
     {{> svg-items}}
@@ -386,15 +386,16 @@
   {{> preloader}} {{> header}}
   <div class="wrapper off-canvas-wrapper ">
     {{> off-canvas}}
-    <div class="off-canvas-content">
+    <div class="off-canvas-content" data-off-canvas-content>
       {{> body}}
     </div>
     {{> footer}}
   </div>
 
 
+  </body>
+
   <script src="{{root}}assets/js/app.js "></script>
   <link rel="stylesheet " href="{{root}}assets/css/app.css ">
-</body>
 
 </html>
