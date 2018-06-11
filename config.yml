@@ -23,6 +23,9 @@ PATHS:
   assets:
     - "src/assets/**/*"
     - "!src/assets/{img,js,scss}{,/**/*}"
+  sitedata:
+    - "src/robots.txt"
+    - "src/sitemap.xml"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"
