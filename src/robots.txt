@@ -1,4 +1,4 @@
 User-Agent: *
 Disallow: /styleguide.html
 Host: english-teacher.kz
-Sitemap: /sitemap.xml
+Sitemap: https://english-teacher.kz/
