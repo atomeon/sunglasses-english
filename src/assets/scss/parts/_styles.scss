@@ -170,7 +170,7 @@ a {
 .gallery-slide {
 	@extend .img-cover;
 	height: 100%;
-
+	cursor: pointer;
 }
 
 .hero__container {

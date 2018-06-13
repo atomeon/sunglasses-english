@@ -71,14 +71,18 @@ header {
 .header-nav {
 	text-shadow: 0 0 5px #835858, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
 	font-size: rem(18);
-	@include breakpoint(large) {
+	@include breakpoint(medium) {
 		width: 100%;
 		display: flex;
-		font-size: rem(20);
+		font-size: 1.4vw;
+		@media (min-width: rem(1400)) {
+			font-size: rem(20);
+		}
 	}
 	a {
 		color: #fff;
 		font-weight: 600;
+		
 	}
 
 	li {

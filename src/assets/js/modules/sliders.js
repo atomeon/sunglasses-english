@@ -8,7 +8,22 @@ $('.gallery-slider').slick({
 	slidesToScroll: 1,
 	arrows: false,
 	fade: false,
-	asNavFor: '.gallery-nav'
+	asNavFor: '.gallery-nav',
+
+	// responsive: [
+	// 	{
+	// 		breakpoint: 9999,
+	// 		settings: {
+	// 			dots: false
+	// 		}
+	// 	},
+	// 	{
+	// 		breakpoint: 1023,
+	// 		settings: {
+	// 			dots: true
+	// 		}
+	// 	}
+	// ]
 });
 $('.gallery-nav').slick({
 	slidesToScroll: 1,
