@@ -3,8 +3,7 @@ import 'lg-thumbnail.js';
 import 'lg-hash.js';
 import 'lg-zoom.js';
 
-let selectedImg;
-document.querySelector('.gallery-slider').addEventListener(('click'), (e) => {
+let lightGalleryEvent = (e) => {
 	let galleryTrigger = e.target;
 	let galleryIndex = e.path[2].dataset.slickIndex;
 	// console.log(e);
@@ -25,5 +24,7 @@ document.querySelector('.gallery-slider').addEventListener(('click'), (e) => {
 
 		index: parseInt(galleryIndex)
 	})
+};
 
-});
+document.querySelector('.gallery-slider').addEventListener(('click'), lightGalleryEvent);
+document.querySelector('.gallery-slider').addEventListener(('touchend'), lightGalleryEvent);
