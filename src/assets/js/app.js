@@ -18,6 +18,7 @@ $(document).foundation();
 
 window.onload = function () {
 
+
 	lazySizes.init();
 	document.querySelector('.preloader').remove();
 	$('.header-nav .menu-x a, .mobile-menu ul a, .header__title a, .hero-logo').click(function (e) {

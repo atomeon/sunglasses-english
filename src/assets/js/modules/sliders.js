@@ -1,6 +1,7 @@
 import $ from "jquery";
 import 'slick-carousel';
 
+export let currentGlobalSlide = 0;
 
 $('.gallery-slider').slick({
 	slidesToShow: 1,
@@ -45,4 +46,8 @@ $('.gallery-nav').slick({
 	// 	// settings: "unslick"
 	// 	// instead of a settings object
 	// ]
+});
+
+$('.gallery-slider').on('afterChange', function (event, slick, currentSlide) {
+	currentGlobalSlide = currentSlide;
 });

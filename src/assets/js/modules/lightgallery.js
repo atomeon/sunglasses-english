@@ -3,12 +3,14 @@ import 'lg-thumbnail.js';
 import 'lg-hash.js';
 import 'lg-zoom.js';
 
+import { currentGlobalSlide } from './sliders';
+
 let lightGalleryEvent = (e) => {
-	let galleryTrigger = e.target;
-	let galleryIndex = e.path[2].dataset.slickIndex;
 	// console.log(e);
-	// console.log(e.path[2].dataset.slickIndex);
-	// console.log(galleryIndex);
+	// console.log(e.this);
+	let galleryTrigger = e.target;
+	let galleryIndex = currentGlobalSlide;
+	// let galleryIndex = e.path[2].dataset.slickIndex;
 
 	lightGallery(galleryTrigger, {
 		thumbnail: true,
@@ -27,4 +29,3 @@ let lightGalleryEvent = (e) => {
 };
 
 document.querySelector('.gallery-slider').addEventListener(('click'), lightGalleryEvent);
-document.querySelector('.gallery-slider').addEventListener(('touchend'), lightGalleryEvent);
