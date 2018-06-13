@@ -59,8 +59,8 @@ html {
   }
 }
 
-// @import "src/sass/lightgallery";
-// @import "parts/_lightgallery-local";
+@import "src/sass/lightgallery";
+@import "parts/_lightgallery-local";
 @import "slick/slick.scss";
 @import "slick/slick-theme.scss";
 // @import "parts/slick-local";

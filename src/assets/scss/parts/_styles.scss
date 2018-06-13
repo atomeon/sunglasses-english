@@ -71,24 +71,103 @@ a {
 	}
 }
 
-.hero__slider {
+.gallery-section {
+	padding-top: rem(20);
+	padding-bottom: rem(40);
+	@include breakpoint(medium) {
+		padding-top: rem(40);
+		padding-bottom: rem(60);
+	}
+}
+
+.gallery-container {
+	border-radius: rem(20);
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery {
+	position: relative;
+	padding-top: 60%;
+}
+
+.gallery-arrow {
+	outline: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 54%;
+	// transform: translateY(-50%);
+	z-index: 2;
+	svg {
+		fill: #fff;
+		@include breakpoint(medium) {
+			fill: rgb(194, 108, 188);
+		}
+	}
+
+	&--left {
+		left: 2%;
+		@include breakpoint(medium) {
+			left: -8%;
+		}
+	}
+
+	&--right {
+		right: 2%;
+		@include breakpoint(medium) {
+			right: -8%;
+		}
+	}
+}
+
+.gallery-slider {
 	@extend .abs-full;
-	background: lightblue;
 
 	.slick-list, .slick-track, .slick-slide > div {
 		height: 100%;
 	}
 
-	&:after {
-		@extend .abs-full;
-		content: '';
-		background-color: rgba(255, 255, 255, .4);
-		// background: linear-gradient(to bottom, rgba(255,255,255,.3) 0%, rgba(255,255,255, .5) 98%, rgba(255,255,255,1) 100%);;
-		z-index: 1;
+	.slick-slide {
+		overflow: hidden;
 	}
 }
 
-.hero__slide {
+.gallery-nav {
+	display: none;
+	@include breakpoint(large) {
+		display: block;
+	}
+	height: rem(120);
+
+	.slick-list, .slick-track, .slick-slide > div {
+		height: 100%;
+	}
+
+	.slick-slide {
+		outline: none;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgba($color: #fff, $alpha: 0.0);
+		transition: all .3s;
+		position: relative;
+		&:after {
+			content: '';
+			@extend .abs-full;
+			border: 5px solid;
+			border-color: rgba($color: #fff, $alpha: 0.0);
+		}
+	}
+	
+	.slick-center {
+		&:after {
+			border-color: rgba($color: rgb(194, 108, 188), $alpha: 1.0);
+		}
+	}
+}
+
+.gallery-slide {
 	@extend .img-cover;
 	height: 100%;
 
@@ -141,27 +220,6 @@ h1 {
 	background-color: #fff;
 	margin-top: rem(-30);
 }
-
-// .head-title {
-	
-// 	h1 {
-// 		display: inline;
-// 	}
-
-// 	span {
-// 		// font-family: $ff-second;
-// 		font-size: rem(20);
-// 		@include breakpoint(medium) {
-// 			font-size: rem(36);
-// 		}
-// 		&:after {
-// 			content: ',';
-// 			display: inline;
-// 			color: #000;
-// 			font-family: $ff-main;
-// 		}
-// 	}
-// }
 
 .greeting {
 	padding-top: rem(20);

@@ -13,6 +13,10 @@
     "foundation-sites": "~6.4.1",
     "jquery": ">=3.0.0",
     "lazysizes": "^4.0.2",
+    "lg-hash.js": "^1.0.0",
+    "lg-thumbnail.js": "^1.0.0",
+    "lg-zoom.js": "^1.0.1",
+    "lightgallery.js": "^1.0.3",
     "motion-ui": "~1.2.2",
     "slick-carousel": "^1.8.1",
     "what-input": "^4.1.3"
