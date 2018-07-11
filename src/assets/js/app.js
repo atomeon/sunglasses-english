@@ -14,11 +14,13 @@ import * as from from 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js';
 import "./modules/sliders";
 import "./modules/lightgallery";
 
-$(document).foundation();
+// window.addEventListener('touchmove', e => { e.preventDefault(); }, {passive:true});
 
+$(document).foundation();
 window.onload = function () {
 
 
+	// window.addEventListener('touchmove', event => {}, {passive:true});
 	lazySizes.init();
 	document.querySelector('.preloader').remove();
 	$('.header-nav .menu-x a, .mobile-menu ul a, .header__title a, .hero-logo').click(function (e) {

@@ -9,14 +9,10 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sunglasses English">
   <meta property="og:title" content="Sunglasses English Алматы выучить английский все уровни курсы репетитор подготовка НИШ IELTS TOEFL">
-  <!-- <meta property="og:description" content="Изучайте английский под руководством профессионального лингвиста-педагога со степенью магистра Амстердамского университета прикладных наук - Ашляевой Маржан"> -->
   <meta property="og:url" content="http://english-teacher.kz/ ">
   <meta property="og:locale" content="ru_RU ">
-  <!-- <meta property="og:image " content="assets/img/og-protocol-2.jpg "> -->
   <meta property="vk:image" content="assets/img/og-protocol-l.jpg ">
   <meta property="og:image" content="assets/img/og-protocol-l.jpg ">
-  <!-- <meta property="og:image:width " content="968 ">
-  <meta property="og:image:height " content="504 "> -->
 
 
   <meta name="msapplication-TileColor " content="#ffffff ">
@@ -99,8 +95,8 @@
       0% {
         background-color: #fff;
       }
-      50% {
-        background-color: #000;
+      30% {
+        background-color: #2e183b;
       }
       99% {
         opacity: 0;
@@ -126,6 +122,7 @@
     }
 
     .hero-img {
+      z-index: 3;
       position: absolute;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -136,7 +133,8 @@
 
     .img-cover,
     header,
-    .hero {
+    .hero,
+    hero .abs-full {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -146,11 +144,20 @@
     .hero {
       height: 90vh;
       position: relative;
+      background-color: #22183b;
     }
 
     .hero .grid-container {
       z-index: 2;
       position: relative;
+    }
+
+    .hero .abs-full {
+      z-index: 1;
+      filter: blur(5px);
+      transition: filter, opacity, transform 1s, 0.4s, 1s;
+      opacity: 0;
+      transform: scale(1.1);
     }
 
     @media screen and (min-width: 90em) {
@@ -428,7 +435,7 @@
 
 </body>
 
-<script src="{{root}}assets/js/app.js "></script>
-<link rel="stylesheet " href="{{root}}assets/css/app.css ">
+<script defer src="{{root}}assets/js/app.js"></script>
+<link rel="stylesheet" href="{{root}}assets/css/app.css">
 
 </html>
