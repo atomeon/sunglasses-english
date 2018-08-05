@@ -14,7 +14,7 @@ import { Triggers } from 'foundation-sites/js/foundation.util.triggers';
 import { Accordion } from 'foundation-sites/js/foundation.accordion';
 // import { AccordionMenu } from 'foundation-sites/js/foundation.accordionMenu';
 // import { Drilldown } from 'foundation-sites/js/foundation.drilldown';
-// import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
+import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
 // import { DropdownMenu } from 'foundation-sites/js/foundation.dropdownMenu';
 // import { Equalizer } from 'foundation-sites/js/foundation.equalizer';
 // import { Interchange } from 'foundation-sites/js/foundation.interchange';
@@ -23,7 +23,7 @@ import { OffCanvas } from 'foundation-sites/js/foundation.offcanvas';
 // import { Orbit } from 'foundation-sites/js/foundation.orbit';
 // import { ResponsiveMenu } from 'foundation-sites/js/foundation.responsiveMenu';
 // import { ResponsiveToggle } from 'foundation-sites/js/foundation.responsiveToggle';
-// import { Reveal } from 'foundation-sites/js/foundation.reveal';
+import { Reveal } from 'foundation-sites/js/foundation.reveal';
 // import { Slider } from 'foundation-sites/js/foundation.slider';
 // import { SmoothScroll } from 'foundation-sites/js/foundation.smoothScroll';
 // import { Sticky } from 'foundation-sites/js/foundation.sticky';
@@ -66,7 +66,7 @@ Foundation.plugin(Accordion, 'Accordion');
 
 // Foundation.plugin(Drilldown, 'Drilldown');
 
-// Foundation.plugin(Dropdown, 'Dropdown');
+Foundation.plugin(Dropdown, 'Dropdown');
 
 // Foundation.plugin(DropdownMenu, 'DropdownMenu');
 
@@ -84,7 +84,7 @@ Foundation.plugin(OffCanvas, 'OffCanvas');
 
 // Foundation.plugin(ResponsiveToggle, 'ResponsiveToggle');
 
-// Foundation.plugin(Reveal, 'Reveal');
+Foundation.plugin(Reveal, 'Reveal');
 
 // Foundation.plugin(Slider, 'Slider');
 

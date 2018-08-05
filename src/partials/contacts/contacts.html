@@ -1,0 +1,72 @@
+<section class="section contacts" id="contacts">
+	<div class="grid-container">
+		<h2 class="text-center">Контакты</h2>
+		<div class="grid-x grid-margin-x large-up-3 contacts-block__info">
+			<div class="cell">
+				<div class="contacts-block contacts-block__adress">
+					<div>
+						<svg width="30" height="30">
+							<use xlink:href="#svg-location" />
+						</svg>
+					</div>
+					<div>
+						<a href="https://yandex.kz/maps/162/almaty/?ll=76.934281%2C43.225097&z=19&mode=search&ol=biz&oid=5090253022" target="_blank">
+							<strong itemprop="address">Бальзака 8&nbsp;&mdash; блок&nbsp;4, в&nbsp;здании танцевальной студии &laquo;Аруна&raquo;.</strong>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="cell">
+				<div class="contacts-block">
+					<div>
+						<svg width="30" height="30">
+							<use xlink:href="#svg-phone" />
+						</svg>
+					</div>
+					<div>
+						<strong itemprop="telephone">
+							<a href="tel:+77003030692">+7 (700) 3030692</a>
+						</strong>
+					</div>
+				</div>
+			</div>
+			<div class="cell">
+				<div class="contacts-block">
+					<div>
+						<svg width="30" height="30">
+							<use xlink:href="#svg-email" />
+						</svg>
+					</div>
+					<div>
+						<strong itemprop="email">
+							<a href="mailto:ashlyayeva.m@gmail.com">ashlyayeva.m@gmail.com</a>
+						</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-x grid-margin-x align-center form-large">
+			<div class="cell medium-8 large-5">
+					<h4 class="text-center">Оставьте свои данные</h4>
+					<p>Если я не отвечаю на звонок прямо сейчас, скорей всего я веду урок, оставьте свои данные, я перезвоню вам как только осовобожусь :)</p>
+					<form action="/mail.php" method="POST" class="form-lage__form show-for-large">
+						<input type="hidden" name="form" value="contacts-form-desktop" />
+						<input type="text" name="name" placeholder="Имя">
+						<input type="tel" name="phone" placeholder="Телефон">
+						<input class="button" type="submit" value="Оставить заявку">
+					</form>
+					<form action="/mail.php" method="POST" class="form-lage__form hide-for-large">
+						<input type="hidden" name="form" value="contacts-form-mobile" />
+						<input type="text" name="name" placeholder="Имя">
+						<input type="tel" name="phone" placeholder="Телефон">
+						<input class="button" type="submit" value="Оставить заявку">
+					</form>
+			</div>
+		</div> 
+		<div class="advice text-center">
+			<p>Приводите своих детей и&nbsp;приходите сами!
+				<br/>На&nbsp;моих занятиях весело и&nbsp;интересно!</p>
+		</div>
+	</div>
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee0a49a7c3cd7f7a49eb435eeae2cd67f3fa680763fe7a01e6a6717eddfe8759&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+</section>

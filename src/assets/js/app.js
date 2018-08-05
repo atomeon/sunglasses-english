@@ -37,5 +37,25 @@ window.onload = function () {
 			$('#offCanvas').foundation('close');
 		}
 	});
+
+	// Forms logic
+	$('form').submit(function () {
+		event.preventDefault();
+		var form = $(this);
+		$.ajax({
+			type: $(this).attr('method'),
+			url: $(this).attr('action'),
+			contentType: false,
+			cache: false,
+			data: new FormData(this),
+			processData: false,
+
+			success: function () {
+				// alert('SUCCESS')
+				$('#succes-form').foundation('open');
+				form.hide();
+			}
+		})
+	});
 }
 

@@ -7,17 +7,15 @@
 	}
 	position: absolute;
 	transform: rotate(0deg);
-	transition: 0.5s ease-in-out;
+	// transition: 0.5s ease-in-out;
 	cursor: pointer;
 	z-index: 99;
 	top: 50%;
 	transform: translateY(-50%);
 	right: rem(3);
 	// background-color: $brand-dark-brown;
-	@include breakpoint(large) {
 	  background: transparent;
 	}
-  }
 
 #main-nav-ctrl span {
 	display: block;
@@ -29,7 +27,7 @@
 	opacity: 1;
 	right: rem(10);
 	transform: rotate(0deg);
-	transition: 0.25s ease-in-out;
+	// transition: 0.25s ease-in-out;
   }
   
   #main-nav-ctrl span:nth-child(1) {

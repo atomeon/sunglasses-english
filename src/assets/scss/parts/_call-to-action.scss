@@ -1,0 +1,50 @@
+.connect {
+	position: fixed;
+	top: rem(80);
+	right: rem(40);
+	z-index: 10;
+
+	.button { 
+		min-width: rem(170);
+		font-size: rem(18);
+		text-shadow: rgb(131, 88, 88) 0px 0px 5px, rgb(255, 255, 255) 0px 0px 10px, rgb(255, 255, 255) 0px 0px 15px, rgb(255, 0, 222) 0px 0px 20px, rgb(255, 0, 222) 0px 0px 35px, rgb(255, 0, 222) 0px 0px 40px, rgb(255, 0, 222) 0px 0px 50px, rgb(255, 0, 222) 0px 0px 75px;
+	}
+
+	h4 {
+		font-size: rem(23);
+	}
+}
+
+.connect__cta-dropdown-phone {
+	font-size: rem(18);
+	font-weight: 600;
+	text-align: center;
+}
+
+.connect-mobile {
+	position: fixed;
+	bottom: rem(50);
+	right: rem(30);
+	z-index: 10;
+	border-radius: 100%;
+	background-color: $button-background;
+	height: rem(60);
+	width: rem(60);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	svg {
+		fill: white;
+	}
+}
+
+.mobile-form-modal {
+	display: flex;
+	align-items: center;
+}
+
+.form-mobile__form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

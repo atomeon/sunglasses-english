@@ -1,6 +1,56 @@
+<div class="connect show-for-large">
+	<div class="connect__cta">
+		<button class="button"  data-toggle="connect__cta-dropdown">Записаться</button>
+	</div>
+
+	<div class="dropdown-pane connect__cta-dropdown" id="connect__cta-dropdown" data-dropdown data-auto-focus="true" data-v-offset="15">
+			<p class="text-center">Запишитесь на бесплатное тестирвоание, позвоните:</p>
+			<p class="connect__cta-dropdown-phone">+7 (700) 3030692</p>
+			<h4 class="text-center">Запишитесь сейчас</h4>
+			<p class="text-center">И пройдите <strong>бесплатное</strong> тестирование, узнайте свой уровень</p>
+			<form action="/mail.php" method="POST" class="form-lage__form">
+				<input type="hidden" name="form" value="side-form-desktop" />
+				<input type="text" name="name" placeholder="Имя">
+				<input type="tel" name="phone" placeholder="Телефон">
+				<input class="button" type="submit" value="Оставить заявку">
+			</form>
+	</div>
+</div>
+<!-- <button class="button" data-open="succes-form">Click me for a modal</button> -->
 <footer class="lazyload" data-bg="assets/img/mountains-bg-1.png">
 	<div class="grid-container text-center">
 		Алматы, 2018
 		<a itemprop="url" href="https://english-teacher.kz/">.</a>
 	</div>
 </footer>
+
+<div class="connect-mobile hide-for-large" data-open="mobile-form-modal">
+	<svg width="34" height="34">
+		<use xlink:href="#svg-call" />
+	</svg>
+</div>
+
+<div class="reveal mobile-form-modal" id="mobile-form-modal" data-reveal>
+	<div class="mobile-form__wrapper">
+		<p class="text-center">Запишитесь на бесплатное тестирвоание, позвоните:</p>
+		<p class="connect__cta-dropdown-phone">+7 (700) 3030692</p>
+		<h4 class="text-center">Запишитесь сейчас</h4>
+		<p class="text-center">И пройдите <strong>бесплатное</strong> тестирование, узнайте свой уровень</p>
+		<form action="/mail.php" method="POST" class="form-mobile__form">
+			<input type="hidden" name="form" value="mobile-form" />
+			<input type="text" name="name" placeholder="Имя">
+			<input type="tel" name="phone" placeholder="Телефон">
+			<input class="button" type="submit" value="Оставить заявку">
+		</form>
+		<button class="close-button" data-close aria-label="Close modal" type="button">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
+</div>
+
+<div class="reveal" id="succes-form" data-reveal>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<h4 class="text-center">Форма отправлена, спасибо! <br> Я обязательно с Вами свяжусь!</h4>
+</div>
