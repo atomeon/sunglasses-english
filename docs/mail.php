@@ -31,7 +31,7 @@
 		// 	}
 		// }
 		$token = "658248118:AAFfzvgBLzB78Z5Rp5uzrgEBX5xKElhGr1Y";
-		$chat_id = "-279333961";
+		$chat_id = "-1001344651789";
 		
 		$arr = array(
 			$nameFieldset => $name,
