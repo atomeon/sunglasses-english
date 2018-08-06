@@ -1,4 +1,6 @@
 User-Agent: *
-Disallow: /styleguide.html
 Host: english-teacher.kz
 Sitemap: https://english-teacher.kz/
+
+Disallow: /styleguide.html
+Disallow: /mail.php
