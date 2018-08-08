@@ -9,7 +9,6 @@
 			}
 		}
 		 
-		
 		if (isset($_POST['form'])) {
 			if (!empty($_POST['form'])){
 				$form = strip_tags($_POST['form']);
@@ -17,20 +16,14 @@
 			}
 		}
 		
-		 
 		if (isset($_POST['phone'])) {
 			if (!empty($_POST['phone'])){
-			$phone = strip_tags($_POST['phone']);
+			$phone =  str_replace("+7","8",strip_tags($_POST['phone']));
 			$phoneFieldset = "Телефон: ";
 			}
 		}
-		// if (isset($_POST['theme'])) {
-		// 	if (!empty($_POST['theme'])){
-		// 	$theme = strip_tags($_POST['theme']);
-		// 	$themeFieldset = "Тема: ";
-		// 	}
-		// }
-		$token = "658248118:AAFfzvgBLzB78Z5Rp5uzrgEBX5xKElhGr1Y";
+
+		$token = "";
 		$chat_id = "-1001344651789";
 		
 		$arr = array(
@@ -43,6 +36,7 @@
 		foreach($arr as $key => $value) {
 			$txt .= "<b>".$key."</b> ".$value."%0A";
 		};
+		
 		$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 		if ($sendToTelegram) {
 			

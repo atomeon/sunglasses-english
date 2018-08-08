@@ -13,12 +13,17 @@ import * as from from 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js';
 
 import "./modules/sliders";
 import "./modules/lightgallery";
+import './modules/input-mask';
+import './modules/validation';
+
 
 // window.addEventListener('touchmove', e => { e.preventDefault(); }, {passive:true});
 
 $(document).foundation();
 window.onload = function () {
-
+	// document.querySelector('.connect').style.display = 'block';
+	document.querySelector('.connect').classList.add('is-active');
+	document.querySelector('.connect-mobile').classList.add('is-active');
 
 	// window.addEventListener('touchmove', event => {}, {passive:true});
 	lazySizes.init();
@@ -39,23 +44,6 @@ window.onload = function () {
 	});
 
 	// Forms logic
-	$('form').submit(function () {
-		event.preventDefault();
-		var form = $(this);
-		$.ajax({
-			type: $(this).attr('method'),
-			url: $(this).attr('action'),
-			contentType: false,
-			cache: false,
-			data: new FormData(this),
-			processData: false,
 
-			success: function () {
-				// alert('SUCCESS')
-				$('#succes-form').foundation('open');
-				form.hide();
-			}
-		})
-	});
 }
 

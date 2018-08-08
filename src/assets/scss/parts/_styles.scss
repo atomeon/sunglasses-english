@@ -8,6 +8,8 @@
 	padding-right: rem(16);
 	padding-left: rem(16);
 	// padding: rem(16);
+	height: auto;
+	font-size: rem(18);
 }
 
 a {
@@ -491,16 +493,17 @@ h4 {
 .form-lage__form {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	// align-items: flex-end;
 
+	align-items: center;
 	@include breakpoint(large) {
-		align-items: center;
 	}
 
 	.button {
 		min-width: rem(225);
 		font-size: rem(18);
 		margin-bottom: 0;
+		text-shadow: #835858 0px 0px 5px, white 0px 0px 10px, white 0px 0px 15px, #ff00de 0px 0px 20px, #ff00de 0px 0px 35px, #ff00de 0px 0px 40px, #ff00de 0px 0px 50px, #ff00de 0px 0px 75px;
 	}
 }
 
@@ -552,3 +555,4 @@ footer {
 		height: rem(50);
 	}
 }
+

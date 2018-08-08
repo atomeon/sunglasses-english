@@ -47,22 +47,39 @@
 		</div>
 		<div class="grid-x grid-margin-x align-center form-large">
 			<div class="cell medium-8 large-5">
-					<h4 class="text-center">Оставьте свои данные</h4>
-					<p>Если я не отвечаю на звонок прямо сейчас, скорей всего я веду урок, оставьте свои данные, я перезвоню вам как только осовобожусь :)</p>
-					<form action="/mail.php" method="POST" class="form-lage__form show-for-large">
+				<h4 class="text-center">Оставьте свои данные</h4>
+				<p>Если я не отвечаю на звонок прямо сейчас, скорей всего я веду урок, оставьте свои данные, я перезвоню вам как только осовобожусь :)</p>
+				<form action="/mail.php" method="POST" class="form-lage__form show-for-large has-messages" novalidate>
+					<div class="form-group">
 						<input type="hidden" name="form" value="contacts-form-desktop" />
+					</div>
+					<div class="form-group">
 						<input type="text" name="name" placeholder="Имя">
-						<input type="tel" name="phone" placeholder="Телефон">
-						<input class="button" type="submit" value="Оставить заявку">
-					</form>
-					<form action="/mail.php" method="POST" class="form-lage__form hide-for-large">
+						<div class="messages"></div>
+					</div>
+					<div class="form-group">
+						<input type="tel" name="phone" placeholder="Телефон" class="phone-mask">
+						<div class="messages"></div>
+					</div>
+					<button type="submit" class="button">Оставить заявку</button>
+				</form>
+				<form action="/mail.php" method="POST" class="form-lage__form hide-for-large has-messages" novalidate>
+					<div class="form-group">
 						<input type="hidden" name="form" value="contacts-form-mobile" />
+					</div>
+					<div class="form-group">
 						<input type="text" name="name" placeholder="Имя">
-						<input type="tel" name="phone" placeholder="Телефон">
-						<input class="button" type="submit" value="Оставить заявку">
-					</form>
+						<div class="messages"></div>
+					</div>
+					<div class="form-group">
+						<input type="tel" name="phone" placeholder="Телефон" class="phone-mask">
+						<div class="messages"></div>
+					</div>
+					<button type="submit" class="button">Оставить заявку</button>
+				</form>
+				{{> connect-socials}}
 			</div>
-		</div> 
+		</div>
 		<div class="advice text-center">
 			<p>Приводите своих детей и&nbsp;приходите сами!
 				<br/>На&nbsp;моих занятиях весело и&nbsp;интересно!</p>

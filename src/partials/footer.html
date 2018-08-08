@@ -1,22 +1,32 @@
 <div class="connect show-for-large">
 	<div class="connect__cta">
-		<button class="button"  data-toggle="connect__cta-dropdown">Записаться</button>
+		<button class="button" data-toggle="connect__cta-dropdown">Записаться</button>
 	</div>
 
 	<div class="dropdown-pane connect__cta-dropdown" id="connect__cta-dropdown" data-dropdown data-auto-focus="true" data-v-offset="15">
-			<p class="text-center">Запишитесь на бесплатное тестирвоание, позвоните:</p>
-			<p class="connect__cta-dropdown-phone">+7 (700) 3030692</p>
-			<h4 class="text-center">Запишитесь сейчас</h4>
-			<p class="text-center">И пройдите <strong>бесплатное</strong> тестирование, узнайте свой уровень</p>
-			<form action="/mail.php" method="POST" class="form-lage__form">
+		<p class="text-center">Запишитесь на бесплатное тестирвоание, позвоните:</p>
+		<p class="connect__cta-dropdown-phone">+7 (700) 3030692</p>
+		<h4 class="text-center">Запишитесь сейчас</h4>
+		<p class="text-center">И пройдите
+			<strong>бесплатное</strong> тестирование, узнайте свой уровень</p>
+		<form action="/mail.php" method="POST" class="form-lage__form has-messages" novalidate>
+			<div class="form-group">
 				<input type="hidden" name="form" value="side-form-desktop" />
+			</div>
+			<div class="form-group">
 				<input type="text" name="name" placeholder="Имя">
-				<input type="tel" name="phone" placeholder="Телефон">
-				<input class="button" type="submit" value="Оставить заявку">
-			</form>
+				<div class="messages"></div>
+			</div>
+			<div class="form-group">
+				<input type="tel" name="phone" placeholder="Телефон" class="phone-mask">
+				<div class="messages"></div>
+			</div>
+			<button type="submit" class="button">Оставить заявку</button>
+		</form>
+		{{> connect-socials}}
 	</div>
 </div>
-<!-- <button class="button" data-open="succes-form">Click me for a modal</button> -->
+
 <footer class="lazyload" data-bg="assets/img/mountains-bg-1.png">
 	<div class="grid-container text-center">
 		Алматы, 2018
@@ -33,24 +43,37 @@
 <div class="reveal mobile-form-modal" id="mobile-form-modal" data-reveal>
 	<div class="mobile-form__wrapper">
 		<p class="text-center">Запишитесь на бесплатное тестирвоание, позвоните:</p>
-		<p class="connect__cta-dropdown-phone">+7 (700) 3030692</p>
+		<p class="connect__cta-dropdown-phone">
+			<a href="tel:+77003030692">+7 (700) 3030692</a>
+		</p>
 		<h4 class="text-center">Запишитесь сейчас</h4>
-		<p class="text-center">И пройдите <strong>бесплатное</strong> тестирование, узнайте свой уровень</p>
-		<form action="/mail.php" method="POST" class="form-mobile__form">
-			<input type="hidden" name="form" value="mobile-form" />
-			<input type="text" name="name" placeholder="Имя">
-			<input type="tel" name="phone" placeholder="Телефон">
-			<input class="button" type="submit" value="Оставить заявку">
+		<p class="text-center">И пройдите
+			<strong>бесплатное</strong> тестирование, узнайте свой уровень</p>
+		<form action="/mail.php" method="POST" class="form-mobile__form has-messages" novalidate>
+			<div class="form-group">
+				<input type="hidden" name="form" value="mobile-form" />
+			</div>
+			<div class="form-group">
+				<input type="text" name="name" placeholder="Имя">
+				<div class="messages"></div>
+			</div>
+			<div class="form-group">
+				<input type="tel" name="phone" placeholder="Телефон" class="phone-mask">
+				<div class="messages"></div>
+			</div>
+			<button type="submit" class="button">Оставить заявку</button>
 		</form>
+		{{> connect-socials}}
 		<button class="close-button" data-close aria-label="Close modal" type="button">
 			<span aria-hidden="true">&times;</span>
 		</button>
 	</div>
 </div>
 
-<div class="reveal" id="succes-form" data-reveal>
+<div class="reveal mobile-form-modal" id="succes-form" data-reveal>
 	<button class="close-button" data-close aria-label="Close modal" type="button">
 		<span aria-hidden="true">&times;</span>
 	</button>
-	<h4 class="text-center">Форма отправлена, спасибо! <br> Я обязательно с Вами свяжусь!</h4>
+	<h4 class="text-center">Форма отправлена, спасибо!
+		<br> Я обязательно с Вами свяжусь!</h4>
 </div>
