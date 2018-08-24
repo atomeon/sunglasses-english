@@ -3,4 +3,5 @@ Host: english-teacher.kz
 Sitemap: https://english-teacher.kz/
 
 Disallow: /styleguide.html
+Disallow: /index.html
 Disallow: /mail.php

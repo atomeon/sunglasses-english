@@ -21,12 +21,15 @@ a {
 
 .lead {
 	margin-top: rem(-10);
-	margin-bottom: rem(30);
 	font-size: 110%;
 	font-weight: 600;
 	@include breakpoint(medium) {
 		font-size: 125%;
 	}
+}
+
+.last-p {
+	margin-bottom: rem(30);
 }
 
 .ff-s {
