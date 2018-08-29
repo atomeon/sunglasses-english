@@ -26,6 +26,8 @@ PATHS:
   sitedata:
     - "src/robots.txt"
     - "src/sitemap.xml"
+    - "mail.php"
+    - "sw.js"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"
