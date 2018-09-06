@@ -42,54 +42,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favs.ico/favicon-16x16.png">
   <link rel="manifest" href="assets/img/favs.ico/manifest.json">
 
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;subset=cyrillic" rel="stylesheet">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123160290-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-123160290-1');
-  </script>
-
-
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function (d, w, c) {
-      (w[c] = w[c] || []).push(function () {
-        try {
-          w.yaCounter49440283 = new Ya.Metrika2({
-            id: 49440283,
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-          });
-        } catch (e) { }
-      });
-
-      var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://mc.yandex.ru/metrika/tag.js";
-
-      if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-      } else { f(); }
-    })(document, window, "yandex_metrika_callbacks2");
-  </script>
-  <noscript>
-    <div>
-      <img src="https://mc.yandex.ru/watch/49440283" style="position:absolute; left:-9999px;" alt="" />
-    </div>
-  </noscript>
-  <!-- /Yandex.Metrika counter -->
-
-  {{> critical-css}} {{> critical-js}}
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;subset=cyrillic" rel="stylesheet"> {{> critical-css}} {{> critical-js}}
 
 </head>
 
@@ -113,5 +66,50 @@
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script defer src="{{root}}assets/js/app.js"></script>
 <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123160290-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123160290-1');
+</script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+  (function (d, w, c) {
+    (w[c] = w[c] || []).push(function () {
+      try {
+        w.yaCounter49440283 = new Ya.Metrika2({
+          id: 49440283,
+          clickmap: true,
+          trackLinks: true,
+          accurateTrackBounce: true,
+          webvisor: true
+        });
+      } catch (e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+      s = d.createElement("script"),
+      f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+    if (w.opera == "[object Opera]") {
+      d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+  })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/49440283" style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 
 </html>

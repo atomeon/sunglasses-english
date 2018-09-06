@@ -18,12 +18,11 @@ import './modules/validation';
 import './modules/scroll-animate';
 import './modules/map';
 
-if ('serviceWorker' in navigator) {
-	window.addEventListener('load', () => {
-		navigator.serviceWorker
-			.register('../sw.js')
-			.then(reg => console.log('REGISTERED'))
-			.catch(err => console.log(`SW Error:  ${err}`))
-
-	})
-}
+// if ('serviceWorker' in navigator) {
+// 	window.addEventListener('load', () => {
+// 		navigator.serviceWorker
+// 			.register('../sw.js')
+// 			.then(reg => console.log('REGISTERED'))
+// 			.catch(err => console.log(`SW Error:  ${err}`))
+// 	})
+// }
