@@ -1,59 +1,26 @@
-
-// @font-face {
-//     font-family: 'cormorantgaramond';
-//     font-weight: 700;
-//     src: url('../fonts/cormorantgaramond-bold-webfont.woff2') format('woff2'), /* Serve Woff2 to browsers who accept it fall back to woff below */
-//          url('../fonts/cormorantgaramond-bold-webfont.woff') format('woff'), /* Safari, Android, iOS */
-// }
-
-// @font-face {
-//     font-family: 'Open-sans';
-//     font-weight: 700;
-//     src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'), /* Serve Woff2 to browsers who accept it fall back to woff below */
-//          url('../fonts/opensans-bold-webfont.woff') format('woff'), /* Safari, Android, iOS */
-// }
-// @font-face {
-//     font-family: 'Open-sans';
-//     font-weight: 400;
-//     src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'), /* Serve Woff2 to browsers who accept it fall back to woff below */
-//          url('../fonts/opensans-regular-webfont.woff') format('woff'), /* Safari, Android, iOS */
-// }
-// @font-face {
-//     font-family: 'Open-sans';
-//     font-weight: 100;
-//     src: url('../fonts/opensans-light-webfont.woff2') format('woff2'), /* Serve Woff2 to browsers who accept it fall back to woff below */
-//          url('../fonts/opensans-light-webfont.woff') format('woff'), /* Safari, Android, iOS */
-// }
-/*
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/subset-OpenSans-Bold.woff2') format('woff2'),
-        url('../fonts/subset-OpenSans-Bold.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
     font-weight: 700;
-    font-style: normal;
+    font-display: swap;
 }
-
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../fonts/subset-OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/subset-OpenSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
 }
-
-*/
 @font-face {
-    font-family: 'lazer84';
-    src: url('../fonts/subset-lazer84.woff2') format('woff2'),
-         url('../fonts/subset-lazer84.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
 }
 
 
-
-// $ff-main: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $ff-main: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-$ff-second: 'lazer84', 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+// $ff-second: 'Montserrat', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $default-font-size: 16;

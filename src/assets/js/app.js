@@ -9,14 +9,23 @@ window.$ = $;
 import './lib/foundation-explicit-pieces';
 
 import * as lazySizes from 'lazysizes';
-import * as from from 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js';
+import 'lazysizes/plugins/unveilhooks/ls.unveilhooks.js';
 
 import "./modules/sliders";
 import "./modules/lightgallery";
 import './modules/input-mask';
 import './modules/validation';
 import './modules/scroll-animate';
-import './modules/map';
+// import './modules/map';
+
+window.onload = function () {
+	$(document).foundation();
+	lazySizes.init();
+
+	// document.querySelector('.preloader').remove();
+	document.querySelector('.connect').classList.add('is-active');
+	document.querySelector('.connect-mobile').classList.add('is-active');
+}
 
 // if ('serviceWorker' in navigator) {
 // 	window.addEventListener('load', () => {

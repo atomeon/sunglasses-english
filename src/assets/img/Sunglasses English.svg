@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="405px" height="166px" viewBox="0 0 405 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>Sunglasses English</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="lazer84" font-size="25" font-weight="normal" fill="#B73BB6">
+            <tspan x="71" y="91">Sunglasses English</tspan>
+        </text>
+        <filter x="-110.7%" y="-1026.8%" width="319.5%" height="2153.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="37.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter3"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter3" result="shadowBlurOuter3"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter3" result="shadowMatrixOuter3"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter4"></feOffset>
+            <feGaussianBlur stdDeviation="17.5" in="shadowOffsetOuter4" result="shadowBlurOuter4"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter4" result="shadowMatrixOuter4"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter5"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter5" result="shadowBlurOuter5"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0   0 0 0 0 0.870588235  0 0 0 1 0" type="matrix" in="shadowBlurOuter5" result="shadowMatrixOuter5"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter6"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter6" result="shadowBlurOuter6"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter6" result="shadowMatrixOuter6"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter7"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter7" result="shadowBlurOuter7"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter7" result="shadowMatrixOuter7"></feColorMatrix>
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter8"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter8" result="shadowBlurOuter8"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter8" result="shadowMatrixOuter8"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter3"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter4"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter5"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter6"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter7"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter8"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="1">
+        <g id="Sunglasses-English" fill="#B73BB6">
+            <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+            <use xlink:href="#text-1"></use>
+        </g>
+    </g>
+</svg>

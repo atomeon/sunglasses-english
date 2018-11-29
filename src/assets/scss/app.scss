@@ -50,20 +50,17 @@
 // @include foundation-prototype-classes;
 @include motion-ui-transitions;
 @include motion-ui-animations;
-html {
-  @media (min-width: 2300px)  {
-    font-size: 18px;
-  }
-  @media screen and (min-width: 1023px) and (max-height: 900px) and (max-width: 1399px) {
-    font-size: 13px;
-    .header-nav {
-      font-size: 1.2vw;
-    }
-  }
-  // @media (min-width: 2500px) {
-  //   font-size: 20px;
-  // }
-}
+// html {
+//   @media (min-width: 2300px)  {
+//     font-size: 18px;
+//   }
+//   @media screen and (min-width: 1023px) and (max-height: 900px) and (max-width: 1399px) {
+//     font-size: 13px;
+//     .header-nav {
+//       font-size: 1.2vw;
+//     }
+//   }
+// }
 
 @import "src/sass/lightgallery";
 @import "parts/_lightgallery-local";

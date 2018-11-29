@@ -32,14 +32,15 @@ a {
 	margin-bottom: rem(30);
 }
 
-.ff-s {
-	font-family: $ff-second;
-}
+// .ff-s {
+// 	font-family: $ff-second;
+// }
 
 .--pink {
 	color: $theme-pink;
 }
 .hero {
+	overflow: hidden;
 	height: 90vh;
 	position: relative;
 	background: linear-gradient(to bottom, rgba(59,35,74,1) 0%, rgba(19,15,31,1) 100%);
@@ -53,16 +54,23 @@ a {
 .hero .abs-full {
 	z-index: 1;
 	@extend .img-cover;
-	// filter: blur(5px);
-	transition: filter, opacity, transform 1s, 0.4s, 1s;
+	transition: opacity, transform 1s, 0.4s, 1s;
 	opacity: 0;
 	transform: scale(1.1);
 }
 
 .hero .abs-full.lazyloaded {
-	// filter: blur(0);
 	opacity: 1;
 	transform: scale(1);
+}
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+.lazyloaded {
+	opacity: 1;
+	transition: opacity 300ms;
 }
 
 a {
@@ -100,7 +108,47 @@ a {
 // }
 
 .about.section, .programs.section {
-	background-color: #f9f9f9;
+	background-color: #f7f7f7;
+}
+
+.pitch {
+	position: relative;
+	@extend .img-cover;
+	&:after {
+		content: '';
+		@extend .abs-full;
+		// background: #fff;
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 57%, rgba(246,246,246,0.84) 70%, rgba(255,255,255,0) 100%);
+		opacity: .85;
+		z-index: 0;
+	}
+
+	p, h5 {
+		position: relative;
+		z-index: 1;
+	}
+	p {
+		font-size: rem(18);
+	}
+
+	img {
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		@include breakpoint(medium) {
+			max-width: rem(600);
+		}
+	}
+
+	padding-top: rem(20);
+	padding-bottom: 90vw;
+	@include breakpoint(medium) {
+		padding-top: rem(50);
+		padding-bottom: rem(550);
+		
+	}
 }
 
 .gallery-section {
@@ -277,7 +325,7 @@ h4 {
 		padding-top: 60%;
 		
 	}
-	background-image: url(../img/mountains-bg-1.png);
+	// background-image: url(../img/mountains-bg-1.png);
 	background-repeat: no-repeat;
 	// background-size: cover;
 
@@ -328,7 +376,7 @@ h4 {
 }
 
 .section {
-	padding-top: rem(10);
+	padding-top: rem(20);
 	padding-bottom: rem(30);
 	@include breakpoint(medium) {
 		padding-top: rem(25);
@@ -376,7 +424,18 @@ h4 {
 	margin-bottom: rem(15);
 }
 
+.price-card.actual {
+	&:after {
+		z-index: 1;
+	}
+	display: block;
+}
+
 .price-card {
+	display: none;
+	@include breakpoint(large) {
+		display: block;
+	}
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center, 60%;
@@ -389,7 +448,7 @@ h4 {
 		background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(246,246,246,0.8) 47%, rgba(237,237,237,0.4) 100%);
 		left: 0;
 		top: 0;
-		z-index: 1;
+		z-index: 6;
 		border-radius: 20px;
 	}
 
@@ -482,10 +541,10 @@ h4 {
 
 .form-large {
 	padding: rem(20) 0 rem(20);
-	background-color: #f9f9f9;
+	background-color: #f7f7f7;
 	@include breakpoint(medium) {
 		
-		background: linear-gradient(to right, rgba(255,255,255,1) 0%, #f9f9f9 20%, #f9f9f9 80%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to right, rgba(255,255,255,1) 0%, #f7f7f7 20%, #f7f7f7 80%, rgba(255,255,255,1) 100%);
 	}
 }
 
@@ -559,3 +618,4 @@ footer {
 	}
 }
 
+.slick-loading .slick-list{background:#fff}

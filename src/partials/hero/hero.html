@@ -1,5 +1,5 @@
 <section class="hero" id="hero">
-	<div class="abs-full lazyload" data-bg="assets/img/retrovawe-bg-5.jpg"></div>
+	<div class="abs-full lazyload" style="background-image: url(assets/img/retrovawe-bg-5.jpg)"></div>
 	<div id="space">
 		<div class="stars"></div>
 		<div class="stars"></div>
@@ -10,5 +10,8 @@
 		<div class="stars"></div>
 		<div class="stars"></div>
 	</div>
-	<img itemprop="logo" src="assets/img/logo-3.png" class="hero-img" alt="hero logo">
+	<picture>
+		<source srcset="{{root}}assets/img/logo-3.webp">
+		<img itemprop="logo" src="assets/img/logo-3.png" class="hero-img" alt="hero logo">
+	</picture>
 </section>

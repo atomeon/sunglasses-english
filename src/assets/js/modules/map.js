@@ -1,6 +1,4 @@
 
-// const map = document.getElementById('map');
-
 function init() {
 	// Создание карты.    
 	var myMap = new ymaps.Map("map", {

@@ -12,6 +12,9 @@ import fs from 'fs';
 import webpackStream from 'webpack-stream';
 import webpack2 from 'webpack';
 import named from 'vinyl-named';
+import critical from 'critical';
+import webp from 'gulp-webp';
+import purify from 'gulp-purifycss'
 
 // Load all Gulp plugins into one variable
 const $ = plugins();
@@ -29,7 +32,7 @@ function loadConfig() {
 
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
-  gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy, copySiteData), styleGuide));
+  gulp.series(clean, gulp.parallel(sass, pages, javascript, images, webpConv, copy, copySiteData), styleGuide, criticalCss, puring));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -56,7 +59,6 @@ function copy() {
 
 
 function copySiteData() {
-  console.log(PATHS.dist);
   return gulp.src(PATHS.sitedata)
     .pipe(gulp.dest(PATHS.dist + '/'));
 }
@@ -87,6 +89,32 @@ function styleGuide(done) {
     template: 'src/styleguide/template.html'
   }, done);
 }
+
+function criticalCss(done) {
+  critical.generate({
+    inline: true,
+    base: 'docs/',
+    src: 'index.html',
+    dest: 'index-critical.html',
+    // minify: true,
+    width: 1300,
+    height: 900
+  });
+  done();
+}
+
+function puring() {
+  return gulp.src(PATHS.dist + '/assets/css/app.css')
+    .pipe(purify([PATHS.dist + '/*.html', PATHS.dist + '/assets/js/*.js'], { minify: true }))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css/pure/'));
+};
+
+// function puring(done) {
+//   purify('docs/assets/css/app.css', ['docs/*.html'], 'docs/assets/css/pure.css');
+//   done();
+// }
+
+
 
 // Compile Sass into CSS
 // In production, the CSS is compressed
@@ -146,6 +174,16 @@ function images() {
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
+function webpConv() {
+  return gulp.src('src/assets/img/**/*.{jpg,png}')
+    .pipe(webp({
+        quality: 70,
+        preset: 'photo',
+        method: 6
+    }))
+    .pipe(gulp.dest(PATHS.dist + '/assets/img/webp')); 
+}
+
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
@@ -166,8 +204,8 @@ function watch() {
   gulp.watch(PATHS.sitedata, copySiteData);
   gulp.watch('src/pages/**/*.html').on('all', gulp.series(pages, browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
-  gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
+  gulp.watch('src/assets/scss/**/*.scss').on('all', sass, puring);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, webpConv, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }

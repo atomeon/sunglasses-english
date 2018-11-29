@@ -1,13 +1,13 @@
 header {
+	opacity: 1!important;
 	position: relative;
+	background: linear-gradient(to bottom,#3b234a 0,#130f1f 100%);
 	&:after {
 		@extend .abs-full;
 		content: '';
-		// background-color: rgba(#fff, .2);
 		background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 100%);
 		z-index: 1;
 	}
-	// background-image: url();
 	background-position: 0 0;
 	@extend .img-cover;
 	color: #fff;
@@ -36,6 +36,8 @@ header {
 
 .header__title {
 	font-size: rem(20);
+	height: 100%;
+	margin-right: rem(30);
 	@include breakpoint(large) {
 		min-width: rem(270);
 		font-size: rem(25);
@@ -44,7 +46,20 @@ header {
 		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de, 0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
 		color: #b73bb6;
 	}
-	margin-right: rem(30);
+	a {
+		position: relative;
+		width: 256px;
+		display: block;
+		height: 100%;
+		svg {
+			position: absolute;
+			width: rem(323);
+			height: rem(166);
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 }
 
 .m-nav__controller {
@@ -54,9 +69,6 @@ header {
 	height: 100%;
 	position: relative;
 	width: rem(100);
-	// @include breakpoint(medium) {
-	// 	display: none;
-	// }
 }
 
 
