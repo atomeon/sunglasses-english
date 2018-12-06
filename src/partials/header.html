@@ -1,9 +1,12 @@
-<header class="lazyload" data-bg="assets/img/nightsky-header-s.jpg">
+<header class="lazyload" style="background-image: url(assets/img/nightsky-header-s.jpg)">
 	<div class="grid-container full-height">
 		<div class="grid-x grid-margin-x full-height">
 			<div class="cell small-6 medium-2 large-1">
 				<a href="#hero" class="hero-logo">
-					<img src="assets/img/sunglasses-cut-90-m.png" class="header__glasses" alt="header logo">
+					<picture>
+						<source srcset="{{root}}assets/img/webp/sunglasses-cut-90-m.webp" type="image/webp" type="image/webp">
+						<img class="header__glasses" src="{{root}}assets/img/sunglasses-cut-90-m.png" alt="header logo">
+					</picture>
 				</a>
 			</div>
 			<div class="cell large-11 medium-10 show-for-large">

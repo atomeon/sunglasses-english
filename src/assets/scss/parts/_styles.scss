@@ -123,9 +123,13 @@ a {
 		z-index: 0;
 	}
 
-	p, h5 {
+	p, h3 {
 		position: relative;
 		z-index: 1;
+	}
+
+	h3 {
+		font-weight: 600;
 	}
 	p {
 		font-size: rem(18);
